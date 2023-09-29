@@ -4,6 +4,13 @@ document.getElementById("loder").style.display = "none";
 document.getElementById("thanks_msg").style.display = "none";
 
 
+setTimeout(() => {
+    
+    if (confirm("Are you interested in pursuing an internship? Apply Now !") == true) {
+        location.href = "https://forms.gle/DoY7nNnAPz1mMThv5";
+    }
+}, 3000);
+
 document.querySelector("form").addEventListener("input", () => {
 
     if (document.getElementById("inputName4").value.trim() != "" && document.getElementById("inputEmail4").value.trim() != "" && document.getElementById("inputNumber4").value.trim() != "" && document.getElementById("inputState").value.trim() != "" && document.getElementById("inputMessage").value.trim() != "") {
@@ -14,10 +21,7 @@ document.querySelector("form").addEventListener("input", () => {
     }
     else {
         document.getElementById("submit-btn").style.display = "none";
-
     }
-
-
 })
 
 
