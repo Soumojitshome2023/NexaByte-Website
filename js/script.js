@@ -6,7 +6,7 @@ document.getElementById("thanks_msg").style.display = "none";
 
 setTimeout(() => {
     
-    if (confirm("Are you interested in pursuing an internship? Apply Now !") == true) {
+    if (confirm("Are you interested in pursuing skill development program? Apply Now !") == true) {
         location.href = "https://forms.gle/DoY7nNnAPz1mMThv5";
     }
 }, 3000);
