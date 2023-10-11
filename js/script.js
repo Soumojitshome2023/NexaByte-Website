@@ -7,7 +7,7 @@ document.getElementById("thanks_msg").style.display = "none";
 setTimeout(() => {
     
     if (confirm("Are you interested in pursuing skill development program? Apply Now !") == true) {
-        location.href = "https://forms.gle/DoY7nNnAPz1mMThv5";
+        location.href = "https://forms.gle/4rtsJT8mDzME5bk88";
     }
 }, 3000);
 
