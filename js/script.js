@@ -4,12 +4,12 @@ document.getElementById("loder").style.display = "none";
 document.getElementById("thanks_msg").style.display = "none";
 
 
-setTimeout(() => {
+// setTimeout(() => {
     
-    if (confirm("Are you interested in pursuing skill development program? Apply Now !") == true) {
-        location.href = "https://forms.gle/UcmzCdYXtXanSW6P7";
-    }
-}, 3000);
+//     if (confirm("Are you interested in pursuing skill development program? Apply Now !") == true) {
+//         location.href = "https://forms.gle/UcmzCdYXtXanSW6P7";
+//     }
+// }, 3000);
 
 document.querySelector("form").addEventListener("input", () => {
 
@@ -42,6 +42,7 @@ function submit_btn() {
         document.getElementById("thanks_msg").innerText = `Thank You`;
 
     }, 3000);
+    
 
     setTimeout(() => {
         document.getElementById("thanks_msg").style.display = "none";
