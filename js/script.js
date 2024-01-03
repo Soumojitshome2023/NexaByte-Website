@@ -5,9 +5,9 @@ document.getElementById("thanks_msg").style.display = "none";
 
 
 // setTimeout(() => {
-    
+
 //     if (confirm("Are you interested in pursuing skill development program? Apply Now !") == true) {
-//         location.href = "https://forms.gle/UcmzCdYXtXanSW6P7";
+//         location.href = "";
 //     }
 // }, 3000);
 
@@ -42,7 +42,7 @@ function submit_btn() {
         document.getElementById("thanks_msg").innerText = `Thank You`;
 
     }, 3000);
-    
+
 
     setTimeout(() => {
         document.getElementById("thanks_msg").style.display = "none";
@@ -77,12 +77,6 @@ function nav_close() {
         document.getElementById("chechboxlabel").click();
     }
 }
-
-
-
-
-
-
 
 
 
