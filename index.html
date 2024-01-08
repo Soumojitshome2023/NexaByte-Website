@@ -876,8 +876,26 @@
 
     <!-- ======================== Footer End======================== -->
 
+    <script>
+        const RoutesObj = {
+            "/wacommunity": "https://chat.whatsapp.com/Lou1ecnul1dGzsmacrTQeW",
+            "/linkedin" : "https://www.linkedin.com/company/nexabyte-org/",
+            "/wachannel" : "https://whatsapp.com/channel/0029Va9X1PE7z4kfk9zeDY1B",
+            
+        }
 
-
+        // Function to handle route changes
+        function handleRoute() {
+            // Get the current route from the URL
+            const route = window.location.href.split('#')[1].toLocaleLowerCase() || '/';
+            // console.log(route)
+            if (RoutesObj[route]) {
+                window.location.href = RoutesObj[route];
+            }
+        }
+        handleRoute();
+        window.addEventListener(onload, handleRoute);
+    </script>
 
     <!-- ========================Scripts======================== -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
